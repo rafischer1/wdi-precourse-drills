@@ -1,0 +1,84 @@
+<!-- g103 Precourse Site page number two
+Artie Fischer -->
+<!DOCTYPE html>
+<html class="page-two" lang="en">
+  <head>
+    <title>Precourse Fun 2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/g103CSS.css">
+  </head>
+
+  <body>
+
+    <!-- <h1 class="heading-primary-two" id="demo">WELCOME! To the second page</h1> -->
+    <h1 id="greeting" class="heading-primary-two"></h1>
+    <script>
+      function greeting() {
+        let txt = "";
+        let person = prompt("Enter your name:", "Brendan Eich");
+        if (person === "" || person === null) {
+            txt = "Not today? Ok!";
+        } else {
+            txt = `Welcome ${person} to precourse page two!`;
+        }
+        document.getElementById("greeting").innerHTML = txt;
+    }
+
+    greeting();
+    </script>
+
+
+    <h2>How do I feel going into the Galvanize WDI Course? Excited!
+            but...
+
+      <div class="gif"><iframe
+      src="https://giphy.com/embed/8OVKEnGXDv1HdfIlUQ" width="480"
+      height="270" class="gif" "giphy-embed" allowFullScreen>
+        </iframe>
+          <br>
+            <button class="gifBtn">HIDE THIS GIF ONCE IT GETS ANNOYING</button>
+      </div>
+    </h2>
+
+      <h4>In my professional life so far I have existed on the edges of programming.
+          Using Site SEO HTML and CSS to improve
+          <a href="http://www.portlandpaddle.net" target="_blank">work-place websites
+          </a>, newsletters for <a href="http://feedtheengine.org/" target="_blank">
+            nonprofit art spaces</a>, my record label's site, blogs, and store,
+            and various other pages that have blended the personal with the professional.
+            <br/>
+            <br/>
+            I'm excited to start Galvanize because this represents a career change
+            for me and the chance to go deep into a new trade. I do not have a
+            clear focus for the end result of the program just yet but here are
+            a few thoughts:
+            <br/>
+            <br/>
+      </h4>
+
+    <h4 class="ol">
+      <ol>Post-Galvanize ideas:
+        <li>Something exciting and new and who knows...?!?!?</li>
+        <li>Geospacial Technologies (resources, mapping)</li>
+        <li>Nonprofit Sector (see:<a href="g103precourse.html" target="_blank">Precourse Bio Page)</a></li>
+        <li>Work, work, work</li>
+        <li>Teaching is some form</li>
+      </ol>
+    </h4>
+
+
+    <section>
+        <div id="animate">
+          <button class="btn">Click here to animate Sticky the Cat with JQuery</button>
+        </div>
+          <img id="cat" src="images/cat2.png" alt="Sticky T." width="240" height="240">
+    </section>
+      <!-- <hr>
+      <footer><p id="today">Fischer 2018 <a href="http://www.rafischer.net"
+              target="_blank">External Homepage</p></footer> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,281 @@
+
+/*Precourse CSS sheet for g103precourse.html
+
+Capture our attention with typographic properties like font, line-height, and
+text-align. Arrange your content with layout properties like display, position,
+left, top, float, and clear. Size your content with dimensional properties like
+height, width, padding, border, and margin. Spice up your content with
+coloration properties like color, background-color, and background-image.
+
+Primary: #D67661
+Secondary: #61C1D6
+Text link and highlight color: rgb(102, 215, 192);
+Background: #8A7E7C to #FAEEEB;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+html {
+  height: 2300px;
+}
+
+html.page-two {
+  height: 1500px;;
+}
+
+.header {
+  height: 95vh;
+  background:
+    linear-gradient(rgba(199, 213, 111, 0.44), rgba(100, 159, 221, 0.53)), url(../images/katyBackground.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  max-height: 650px;
+
+
+  clip-path: polygon(0 0,100% 0,100% 0, 100%);
+}
+
+body {
+  font-family: 'helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 15px;
+  background: linear-gradient(rgba(199, 213, 111, 0.44), rgba(100, 159, 221, 0.53));
+  /* width: 100%;
+  height: 100%;  */
+}
+
+.header {
+    overflow: hidden;
+}
+.heading-primary {
+  padding-top: 10px;
+  margin-left: 20px;
+  min-width: 50%;
+  word-break: inherit;
+}
+
+
+.heading-primary-main {
+  font-size: 85%;
+  color: red;
+  min-width: 50%;
+}
+
+.heading-primary-two {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  min-width: 50%;
+  word-break: inherit;
+  line-height: 100%;
+  color: #D67661;
+}
+
+h1 {
+  color: #000000;
+  font-size: 60px;
+  padding-left: 15px;
+  overflow: hidden;
+
+animation: moveInRight 1s ease-out;
+}
+
+h3 {
+  font-size: 30px;
+  color: rgb(102, 215, 192);
+}
+
+h4 {
+  padding:20px;
+  border: 2px solid rgb(102, 215, 192);
+}
+
+div {
+  margin: 30px;
+}
+
+h5 {
+  color:#D67661;
+  font-size: 90%;
+  padding: 30px;
+  border: 2px solid rgb(102, 215, 192);
+
+}
+
+h6 {
+  font-size: 20px;
+  border: none;
+  width: 200px;
+}
+
+p {
+   font-size: 110%;
+   padding: 5px;
+ }
+
+a {
+  color:#D67661;
+}
+
+a:hover {
+   color:white;
+}
+
+a:visited {
+   color: #D67661;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  background-color: rgb(102, 215, 192);
+  bottom: 0px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: rgb(102, 215, 192);
+    color: white;
+}
+
+li {
+  margin-left: 15px;
+  max-width: 500px;
+}
+li:hover {
+  background-color: rgb(102, 215, 192);
+  color: white;
+}
+
+section.bio1 {
+   overflow: scroll;
+   position: relative;
+ }
+
+div.map {
+   max-width: 300px;
+   max-height: 300px;
+   position: static;
+   padding: 10px;
+   height: 1000px;
+   width:100%;
+   height: 100%;
+}
+
+div.links {
+   position: static;
+   min-width: 300px;
+   bottom: 0px;
+ }
+
+div#animate {
+   position: relative;
+ }
+
+img {
+   position: relative;
+ }
+
+/* BUTTONS */
+
+.gifBtn {
+  font-size: 15px;
+  background-color: #61C1D6;
+  color: white;
+}
+
+.gifBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.36);
+}
+
+.btn {
+    position: relative;
+    font-size: 25px;
+    color: #D67661;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.36);
+}
+
+.mapBtn {
+  position: relative;
+  font-size: 15px;
+  background-color: #61C1D6;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.36);
+  left: 200px;
+  padding: 5px;
+  top: 5px;
+}
+.nav {
+  text-align: center;
+  padding: 20px;
+  width: 200px;
+}
+
+#cat {
+  position: relative;
+  left: 25px;
+}
+
+footer {
+  text-align: right;
+  padding: 20px;
+  position: absolute;
+}
+
+
+
+/* Animation Keyframes */
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transition: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transition: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  80% {
+    transition: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transition: translate(100);
+  }
+}
