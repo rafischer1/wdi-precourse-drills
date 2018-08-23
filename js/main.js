@@ -20,11 +20,20 @@ $(document).ready(function(){
   });
 
 
-  $("#animate").click(function() {
-    $("#cat").animate({
-      opacity: 0.95,
-      left: "+=50",
-      height: "toggle"
-    }, 2000, function() {
-    });
+  // $("#animate").click(function() {
+  //   $("#cat").animate({
+  //     opacity: 0.95,
+  //     left: "+=50",
+  //     height: "toggle"
+  //   }, 2000, function() {
+  //   });
+  // });
+
+$( "#right" ).click(function() {
+    $( "#cat" ).animate({
+      "left": "+=50px"}, "slow" );
+  });
+
+  $( "#left" ).click(function(){
+    $( "#cat" ).animate({ "left": "-=50px" }, "slow" );
   });

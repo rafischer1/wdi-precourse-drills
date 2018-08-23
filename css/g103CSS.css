@@ -230,14 +230,24 @@ img {
   top: 5px;
 }
 .nav {
-  text-align: center;
+  text-align: left;
   padding: 20px;
-  width: 200px;
+  /* width: 200px; */
 }
 
 #cat {
   position: relative;
   left: 25px;
+  z-index: 1;
+}
+
+.pizza {
+  opacity: .7;
+  z-index: 9;
+  position: relative;
+  padding-left: 240px;
+
+  animation: moveInRight 1s ease-out;
 }
 
 footer {
